@@ -36,7 +36,9 @@
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/alk-rounded-mtav-med/css/alk-rounded-mtav-med.min.css">
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/alk-sanet/css/alk-sanet.min.css">
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/dejavu-sans-condensed/css/dejavu-sans-condensed.min.css">
 </head>
 
 <body>
@@ -86,28 +88,28 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ml-auto">
                                     <li class="nav-item active">
-                                        <a class="page-scroll" href="#home">Home</a>
+                                        <a class="page-scroll" href="#home">მთავარი</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#features">Features</a>
+                                        <a class="page-scroll" href="#features">მახასიათებლები</a>
                                     </li>
-                                    <li class="nav-item">
+                                    {{-- <li class="nav-item">
                                         <a class="page-scroll" href="#about">About</a>
-                                    </li>
+                                    </li> --}}
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#facts">Why</a>
+                                        <a class="page-scroll" href="#facts">რატომ ჩვენ?</a>
                                     </li>
-                                    <li class="nav-item">
+                                    {{-- <li class="nav-item">
                                         <a class="page-scroll" href="#team">Team</a>
-                                    </li>
+                                    </li> --}}
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="{{ route('register') }}">Create Account</a>
+                                        <a class="page-scroll" href="{{ route('register') }}">რეგისტრაცია</a>
                                     </li>
                                 </ul>
                             </div> <!-- navbar collapse -->
                             
                             <div class="navbar-btn d-none d-sm-inline-block">
-                                <a class="main-btn" data-scroll-nav="0" href="{{ route('login') }}">Log in</a>
+                                <a class="main-btn" data-scroll-nav="0" href="{{ route('login') }}">შესვლა</a>
                             </div>
                         </nav> <!-- navbar -->
                     </div>
@@ -120,10 +122,14 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="header-hero-content text-center">
-                            <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Basic - SaaS Landing Page</h3>
-                            <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Kickstart Your SaaS or App Site</h2>
-                            <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
-                            <a href="#" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Get Started</a>
+                            <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">ინფლუენსერ</h3>
+                            <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">დაეხმარე შენს ბიზნესს თუ ინფლუენსერ არხის წინსვლაში</h2>
+                            <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">ეს იქნება მცირე ბიზნესი თუ Facebook, Youtube, Instagram არხი</p>
+                            <a href="#" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">დაიწყე</a>
+                            {{-- <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Influencer store</h3>
+                            <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Kickstart Your Business or Your Influencer Account</h2>
+                            <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Whether it's startup business, Facebook, Youtube</p>
+                            <a href="#" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Started</a> --}}
                         </div> <!-- header hero content -->
                     </div>
                 </div> <!-- row -->
@@ -179,7 +185,7 @@
                 <div class="col-lg-10">
                     <div class="section-title text-center pb-40">
                         <div class="line m-auto"></div>
-                        <h3 class="title">Clean and simple design, <span> Comes with everything you need to get started!</span></h3>
+                        <h3 class="title"><span>მარტივად და სწრაფად მხოლოდ ფოსტის მეშვეობით შემოუერთდი ჩვენს პლატფორმას  და <br></span>დაიწყე დარეკლამება 5 წუთში!</h3>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
@@ -192,8 +198,8 @@
                             <i class="lni-baloon"></i>
                         </div>
                         <div class="services-content mt-30">
-                            <h4 class="services-title"><a href="#">Clean</a></h4>
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
+                            <h4 class="services-title"><a href="#">მარტივი</a></h4>
+                            <p class="text">ჩვენი პლატფორმა თავისი სიმარტივით, მარტივი დიზაინით და მოხერხებული ინტერფეისით, დაგეხმარებათ აქციოთ თქვენი არხი შემოსავლის წყაროდ ან დაარეკლამოთ თქვენი ბიზნესი.</p>
                             <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
                         </div>
                     </div> <!-- single services -->
@@ -206,8 +212,8 @@
                             <i class="lni-cog"></i>
                         </div>
                         <div class="services-content mt-30">
-                            <h4 class="services-title"><a href="#">Robust</a></h4>
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
+                            <h4 class="services-title"><a href="#">ხარისხიანი & იაფი</a></h4>
+                            <p class="text">ჩვენ საიტზე მარტივად მოძებნით ინფლუენსერს თქვენი რეკლამისთვის, ან ბიზნესს თქვენი ინფლუენსერობისთვის</p>
                             <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
                         </div>
                     </div> <!-- single services -->
@@ -220,8 +226,8 @@
                             <i class="lni-bolt-alt"></i>
                         </div>
                         <div class="services-content mt-30">
-                            <h4 class="services-title"><a href="#">Powerful</a></h4>
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
+                            <h4 class="services-title"><a href="#">ეფექტური</a></h4>
+                            <p class="text">იცით რა რთულია ქართველი ინფლუენსერისთვის არხისთვის რეკლამის მოზიდვა? ასევე რა შრომატევადია ბიზნესისთვის ინფლუენსერებთან კონტაქტი? ჩვენი პლატფორმა კი ამ პროცესს შედარებით ეფექტურს და მარტივს ხდის</p>
                             <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
                         </div>
                     </div> <!-- single services -->
@@ -344,7 +350,7 @@
                         <div class="counter-content">
                             <div class="section-title">
                                 <div class="line"></div>
-                                <h3 class="title">Cool facts <span> this about app</span></h3>
+                                <h3 class="title">ჩვენი საიტის <span> მნიშვნელოვანი სტატისტიკა</span></h3>
                             </div> <!-- section title -->
                             <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                         </div> <!-- counter content -->
@@ -352,24 +358,24 @@
                             <div class="col-4">
                                 <div class="single-counter counter-color-1 d-flex align-items-center justify-content-center">
                                     <div class="counter-items text-center">
-                                        <span class="count"><span class="counter">125</span>K</span>
-                                        <p class="text">Downloads</p>
+                                        <span class="count"><span class="counter">11</span></span>
+                                        <p class="text">ვიზიტები<br>წელიწადში</p>
                                     </div>
                                 </div> <!-- single counter -->
                             </div>
                             <div class="col-4">
                                 <div class="single-counter counter-color-2 d-flex align-items-center justify-content-center">
                                     <div class="counter-items text-center">
-                                        <span class="count"><span class="counter">87</span>K</span>
-                                        <p class="text">Active Users</p>
+                                        <span class="count"><span class="counter">8</span></span>
+                                        <p class="text">ექაუნთები</p>
                                     </div>
                                 </div> <!-- single counter -->
                             </div>
                             <div class="col-4">
                                 <div class="single-counter counter-color-3 d-flex align-items-center justify-content-center">
                                     <div class="counter-items text-center">
-                                        <span class="count"><span class="counter">4.8</span></span>
-                                        <p class="text">User Rating</p>
+                                        <span class="count"><span class="counter">10000</span></span>
+                                        <p class="text">არ ვიცით</p>
                                     </div>
                                 </div> <!-- single counter -->
                             </div>
@@ -390,7 +396,7 @@
                 <div class="col-lg-5">
                     <div class="section-title text-center pb-30">
                         <div class="line m-auto"></div>
-                        <h3 class="title"><span>Meet Our</span> Creative Team Members</h3>
+                        <h3 class="title"><span>ჩვენ</span> ჩვენ და ჩვენ</h3>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
@@ -409,8 +415,8 @@
                             </div>
                         </div>
                         <div class="team-content">
-                            <h5 class="holder-name"><a href="#">Isabela Moreira</a></h5>
-                            <p class="text">Founder and CEO</p>
+                            <h5 class="holder-name"><a href="#">ნიკა მაისურაძე</a></h5>
+                            <p class="text">დირექტორი და CEO</p>
                         </div>
                     </div> <!-- single team -->
                 </div>
@@ -428,8 +434,8 @@
                             </div>
                         </div>
                         <div class="team-content">
-                            <h5 class="holder-name"><a href="#">Elon Musk</a></h5>
-                            <p class="text">Sr. Software Engineer</p>
+                            <h5 class="holder-name"><a href="#">მე</a></h5>
+                            <p class="text">დირექტორი და CEO</p>
                         </div>
                     </div> <!-- single team -->
                 </div>
@@ -447,8 +453,8 @@
                             </div>
                         </div>
                         <div class="team-content">
-                            <h5 class="holder-name"><a href="#">Fiona Smith</a></h5>
-                            <p class="text">Business Development Manager</p>
+                            <h5 class="holder-name"><a href="#">Elon Musk</a></h5>
+                            <p class="text">Junior Developer (Intern)</p>
                         </div>
                     </div> <!-- single team -->
                 </div>
@@ -466,7 +472,7 @@
                 <div class="col-lg-5">
                     <div class="section-title text-center pb-40">
                         <div class="line m-auto"></div>
-                        <h3 class="title">Users sharing<span> their experience</span></h3>
+                        <h3 class="title">შეფასებები<span> ჩვენი კლიენტების</span></h3>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
@@ -488,7 +494,7 @@
                             </div>
                         </div>
                         <div class="testimonial-text">
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.</p>
+                            <p class="text">აიიიიიიიიიიიიიი ძალიან დამეხმარეთ! მადლობა! ძალიან მინდოდა რომ მეტი დრო დამეთმო ჩემი არხისთვის უბრალოდ ფინანსები არ მყოფნიდა!</p>
                         </div>
                         <div class="testimonial-author d-flex align-items-center">
                             <div class="author-image">
@@ -496,8 +502,8 @@
                                 <img class="author" src="assets/images/author-1.png" alt="author">
                             </div>
                             <div class="author-content media-body">
-                                <h6 class="holder-name">Jenny Deo</h6>
-                                <p class="text">CEO, SpaceX</p>
+                                <h6 class="holder-name">ნიკა მაისურაძე</h6>
+                                <p class="text">CEO, "ლუდი საქართველო"</p>
                             </div>
                         </div>
                     </div> <!-- single testimonial -->
@@ -519,7 +525,7 @@
                             </div>
                         </div>
                         <div class="testimonial-text">
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.</p>
+                            <p class="text">ჩვენმა ბიზნესმა დაასკვნა რომ უბრალო სოციალურ რეკლამაზე უფრო ეფექტური ინფლუენსერ რეკლამა იყო, უბრალოდ ამას სერიოზული დროითი რესურსი ჭირდებოდა... სანამ ამ პლატფორმას აღმოვაჩენდით!</p>
                         </div>
                         <div class="testimonial-author d-flex align-items-center">
                             <div class="author-image">
@@ -527,8 +533,8 @@
                                 <img class="author" src="assets/images/author-2.png" alt="author">
                             </div>
                             <div class="author-content media-body">
-                                <h6 class="holder-name">Marjin Otte</h6>
-                                <p class="text">UX Specialist, Yoast</p>
+                                <h6 class="holder-name">ლადო კახაშვილი</h6>
+                                <p class="text">ლუდის მეორე ქარხანა</p>
                             </div>
                         </div>
                     </div> <!-- single testimonial -->
@@ -550,7 +556,7 @@
                             </div>
                         </div>
                         <div class="testimonial-text">
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.</p>
+                            <p class="text">მადლობა!</p>
                         </div>
                         <div class="testimonial-author d-flex align-items-center">
                             <div class="author-image">
@@ -558,8 +564,8 @@
                                 <img class="author" src="assets/images/author-3.png" alt="author">
                             </div>
                             <div class="author-content media-body">
-                                <h6 class="holder-name">David Smith</h6>
-                                <p class="text">CTO, Alphabet</p>
+                                <h6 class="holder-name">კიკნა</h6>
+                                <p class="text">ილუსტრატორის მამა</p>
                             </div>
                         </div>
                     </div> <!-- single testimonial -->
@@ -581,16 +587,16 @@
                             </div>
                         </div>
                         <div class="testimonial-text">
-                            <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.</p>
+                            <p class="text">მადლობა!<br><br><br><br>მაააააადლობა!</p>
                         </div>
                         <div class="testimonial-author d-flex align-items-center">
                             <div class="author-image">
                                 <img class="shape" src="assets/images/textimonial-shape.svg" alt="shape">
-                                <img class="author" src="assets/images/author-2.png" alt="author">
+                                <img class="author" src="assets/images/author-3.png" alt="author">
                             </div>
                             <div class="author-content media-body">
-                                <h6 class="holder-name">Fajar Siddiq</h6>
-                                <p class="text">COO, MakerFlix</p>
+                                <h6 class="holder-name">კიკნა</h6>
+                                <p class="text">ილუსტრატორის მამა</p>
                             </div>
                         </div>
                     </div> <!-- single testimonial -->

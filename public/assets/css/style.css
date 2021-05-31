@@ -29,9 +29,10 @@
 /*===========================
      01.COMMON css 
 ===========================*/
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap"); */
 body {
-  font-family: "Lato", sans-serif;
+  /* font-family: "Lato", sans-serif; */
+  font-family: "DejaVu Sans Condensed", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #6A6972;
@@ -77,7 +78,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "ALK Rounded Mtav Med", sans-serif;
   font-weight: 700;
   color: #2E2E2E;
   margin: 0px; }
@@ -125,6 +127,7 @@ p {
 
 /*===== All Button Style =====*/
 .main-btn {
+  font-family: "ALK Rounded Mtav Med", sans-serif;
   display: inline-block;
   font-weight: 500;
   text-align: center;
@@ -612,7 +615,11 @@ p {
     transition: all 0.3s ease-out 0s;
     padding: 10px 0;
     position: relative;
-    font-family: "Poppins", sans-serif; }
+    /* font-family: "Poppins", sans-serif;  */
+  
+    font-family: "ALK Rounded Mtav Med", sans-serif;
+  }
+
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .navbar-nav .nav-item a {
         display: block;
