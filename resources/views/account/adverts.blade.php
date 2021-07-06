@@ -1,6 +1,9 @@
 @extends('layouts/layout')
 @section ('data')
 	<div class="title">სარეკლამო კამპანიები</div>
+	@if (session('offer'))
+		<div class="alert alert-success">შეთავაზება წარმატებულია</div>
+	@endif
 	<table class="table table-bordered">
 		<tr>
 			<td>კომპანია</td>

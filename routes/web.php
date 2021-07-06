@@ -26,8 +26,10 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 Route::middleware(['auth'])->group(function () {
     Route::get('adverts', [Posts::class, 'listPost'])->name('adverts');
+    Route::get('myadverts', [Posts::class, 'listOwnPost'])->name('my_adverts');
+    Route::get('advertoffers', [Posts::class, 'listAdvertOffers'])->name('advert_offers');
     Route::get('advert/{id}', [Posts::class, 'viewPost'])->name('advert');
-    Route::post('advert/{id}', [Posts::class, 'viewPost']);
+    Route::post('advert/{id}', [Posts::class, 'makeOffer']);
     Route::get('prices', [Prices::class, 'view'])->name('prices');
     Route::post('prices', [Prices::class, 'create']);
     Route::get('advertscreate', [Posts::class, 'createView'])->name('createadverts');

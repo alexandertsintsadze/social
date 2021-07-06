@@ -12,13 +12,17 @@
 	@if (Auth::user()->type === 1 && $advert->type === 2)
 	<div class="mini-title">შეთავაზება</div>
 		<form method="POST" action="{{route('advert', ['id' => $advert->id])}}">
+			@csrf
 			თქვენი შეთავაზება (ლარი)
+			<input name="type" type="hidden" value="2" />
 			<input type="text" class="form-control" name="price" />
 			<input type="submit" class="btn btn-primary" value="შეთავაზება" />
 		</form>
 	@elseif (Auth::user()->type === 1 && $advert->type === 1)
 		<div class="mini-title">რეკლამის საფასური არის {{$advert->price}} ლარი</div>
 		<form method="POST" action="{{route('advert', ['id' => $advert->id])}}">
+			@csrf
+			<input name="type" type="hidden" value="1" />
 			<input type="submit" class="btn btn-primary" value="დათანხმება" />
 		</form>
 	@endif

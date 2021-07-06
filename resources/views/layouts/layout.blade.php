@@ -19,8 +19,10 @@
 				@if (Auth::user()->type === 1)
 					<a href="{{route('adverts')}}">შეკვეთების მოძებნა</a><br>
 					<a href="{{route('prices')}}">ფასების რედაქტიურება</a>
+					<a href="{{route('advert_offers')}}">ჩემი შეთავაზებები</a><br>
 				@elseif (Auth::user()->type === 2)
 					<a href="{{route('createadverts')}}">შეკვეთის შექმნა</a>
+					<a href="{{route('my_adverts')}}">ჩემი კამპანიები</a><br>
 				@endif
 				<br><br>
 				<form method="POST" action="{{route('logout')}}">
