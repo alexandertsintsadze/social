@@ -21,11 +21,13 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    // return view('dashboard');
+    return view('account.index');
 })->middleware(['auth'])->name('dashboard');
 Route::middleware(['auth'])->group(function () {
     Route::get('adverts', [Posts::class, 'listPost'])->name('adverts');
     Route::get('advert/{id}', [Posts::class, 'viewPost'])->name('advert');
+    Route::post('advert/{id}', [Posts::class, 'viewPost']);
     Route::get('prices', [Prices::class, 'view'])->name('prices');
     Route::post('prices', [Prices::class, 'create']);
     Route::get('advertscreate', [Posts::class, 'createView'])->name('createadverts');

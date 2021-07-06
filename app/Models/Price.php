@@ -9,6 +9,9 @@ class Price extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'account_id'
+    ];
     public function scopeOwn($data, $id) {
         return $data->where('account_id', '=', $id);
     }

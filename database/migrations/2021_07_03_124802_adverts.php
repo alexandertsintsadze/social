@@ -19,6 +19,7 @@ class Adverts extends Migration
             $table->string('title');
             $table->string('description');
             $table->boolean('active');
+            $table->decimal('price', 8,2)->nullable();
             $table->integer('type');
             $table->timestamps();
         });

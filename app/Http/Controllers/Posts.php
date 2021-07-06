@@ -28,7 +28,8 @@ class Posts extends Controller
         return view('account.createadverts');
     }
     public function viewPost(Request $request, $id) {
-        $advert = Advert::find($id);
+        // $advert = Advert::find($id);
+        $advert = DB::table('adverts')->select('adverts.*', 'accounts.name as name')->where([['adverts.id', '=', $id], ['adverts.active', '=', 1]])->leftJoin('accounts', 'accounts.id', '=', 'adverts.account_id')->first();
 
         return view('account.viewadvert', ['advert' => $advert]);
     }
@@ -37,7 +38,7 @@ class Posts extends Controller
     }
     public function listPost() {
         //Advert::
-        $adverts = DB::table('adverts')->select('adverts.*', 'accounts.name as name')->where([['adverts.type', '=', 1], ['active', '=', 1]])->leftJoin('accounts', 'accounts.id', '=', 'adverts.account_id')->get();;
+        $adverts = DB::table('adverts')->select('adverts.*', 'accounts.name as name')->where([/* ['adverts.type', '=', 1],  */['active', '=', 1]])->leftJoin('accounts', 'accounts.id', '=', 'adverts.account_id')->get();;
         // dump($adverts);
         function status($type) {
             switch($type) {

@@ -20,6 +20,7 @@ class Account extends Authenticatable
         'name',
         'email',
         'password',
+        'type'
     ];
 
     /**

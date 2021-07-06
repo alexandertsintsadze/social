@@ -14,7 +14,7 @@
 		{{-- <input class="form-control" type="text" /> --}}
 		<select name="type" class="form-control">
 			<option>
-				კონკრეტულ ინფლუენსერს
+				კონკრეტული ფასი
 			</option>
 			<option>
 				შემომთავაზეთ ფასები
@@ -23,6 +23,9 @@
 				კრიტერიუმების მიხედვით
 			</option>
 		</select>
+		<label> ფასი
+		<input type="text" name="price" />
+		</label>
 		<input type="submit" class="btn btn-primary" value="შენახვა" />
 	</form>
 @endsection

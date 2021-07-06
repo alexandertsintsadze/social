@@ -25,7 +25,12 @@
 
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
             </div>
-
+            <label>
+                <input type="radio" name="type" value="1" /> ინფლუენსერი
+            </label>
+            <label>
+                <input type="radio" name="type" value="2" /> ბიზნესი
+            </label>
             <!-- Password -->
             <div class="mt-4">
                 <x-label for="password" :value="__('Password')" />

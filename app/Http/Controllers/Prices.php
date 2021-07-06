@@ -81,12 +81,20 @@ class Prices extends Controller
     public function view(Request $request)
     {
         $price = Price::own(Auth::id())->first();
+        if (!$price) {
+            $price = [];
+            foreach($this->fields as $item) {
+                foreach($item as $index=>$field) {
+                    $price[$index] = $request->$index;
+                }
+            }
+        }
         return view('account.prices', ['fields' => $this->fields, 'prices' => $price]);
     }
 
     public function create(Request $request) {
         //own(Auth::id())->
-        $price = Price::firstOrNew([['account_id', '=', Auth::id()]]);
+        $price = Price::firstOrNew(['account_id' => Auth::id()]);
         foreach($this->fields as $item) {
             foreach($item as $index=>$field) {
                 $price->$index = $request->$index;

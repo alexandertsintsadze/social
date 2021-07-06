@@ -102,14 +102,20 @@
                                     {{-- <li class="nav-item">
                                         <a class="page-scroll" href="#team">Team</a>
                                     </li> --}}
+                                    @if (!Auth::id())
                                     <li class="nav-item">
                                         <a class="page-scroll" href="{{ route('register') }}">რეგისტრაცია</a>
                                     </li>
+                                    @endif
                                 </ul>
                             </div> <!-- navbar collapse -->
                             
                             <div class="navbar-btn d-none d-sm-inline-block">
-                                <a class="main-btn" data-scroll-nav="0" href="{{ route('login') }}">შესვლა</a>
+                                @if (!Auth::id())
+                                    <a class="main-btn" data-scroll-nav="0" href="{{ route('login') }}">შესვლა</a>
+                                @else
+                                    <a class="main-btn" data-scroll-nav="0" href="{{ route('dashboard') }}">{{Auth::user()->name}}</a>
+                                @endif
                             </div>
                         </nav> <!-- navbar -->
                     </div>

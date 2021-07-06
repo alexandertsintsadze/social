@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section ('data')
-	ფასები<br>
+	<div class="title"> ფასები</div>
 	<form method="POST" action="{{route('prices')}}">
 		@csrf
 		<div class="row">
@@ -16,7 +16,9 @@
 					@endforeach
 				</div>
 			@endforeach
-			<br><input type="submit" class="btn btn-primary" value="შენახვა" />
+			<div class="col-2">
+				<input type="submit" class="btn btn-primary" value="შენახვა" />
+			</div>
 		</div>
 	</form>
 @endsection
