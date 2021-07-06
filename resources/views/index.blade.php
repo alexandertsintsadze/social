@@ -122,7 +122,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="header-hero-content text-center">
-                            <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">ინფლუენსერ</h3>
+                            <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">SocialEyes</h3>
                             <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">დაეხმარე შენს ბიზნესს თუ ინფლუენსერ არხის წინსვლაში</h2>
                             <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">ეს იქნება მცირე ბიზნესი თუ Facebook, Youtube, Instagram არხი</p>
                             <a href="#" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">დაიწყე</a>
